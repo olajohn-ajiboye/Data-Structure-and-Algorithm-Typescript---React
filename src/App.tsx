@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import {  findMeetingSlots } from './pair-programming/binary-search';
+// import { turtle, } from './pair-programming/index';
+
+import { processLogs2 } from './amazon/test';
+
+import { DoubleNode,MyLinkedList} from './list/LinkedList';
+
 
 function App() {
+
+  const list = new MyLinkedList()
+  
+  list.addAtIndex(0, 3)
+  list.get(0)
+  const head = list.head
+  console.log(head)
+  
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     APP
     </div>
   );
 }
