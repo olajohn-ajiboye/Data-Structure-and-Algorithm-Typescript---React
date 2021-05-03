@@ -1,4 +1,4 @@
-import { secondLargest, MinMaxStack } from '../index'
+import { secondLargest, MinMaxStack ,maxSumSubArray} from '../index'
 
 describe('Second largest function', () => {
 	const arrayOne = [1, 4, 6, 78, 9]
@@ -33,5 +33,15 @@ describe('Min Max Stack', () => {
 		expect(stack.size()).toBe(2)
 		stack.push(10)
 		expect(stack.max()).toBe(10)
+	})
+})
+
+
+describe('Maximum SubArray Sum', () => {
+	const array1 =[1,2,3,4,56,8]
+
+	it('Should verify stack', () => {
+		expect(maxSumSubArray(array1,3)).toBe(68)
+	
 	})
 })

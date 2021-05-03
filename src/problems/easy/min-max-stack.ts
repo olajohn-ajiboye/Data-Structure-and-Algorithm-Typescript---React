@@ -1,5 +1,5 @@
 export default class MinMaxStack {
-	constructor(private stack: number[] = [], public stackCache: number[][] = []) {}
+	constructor(private stack: number[] = [], public stackCache: number[][] = []) { }
 
 	public size() {
 		return this.stack.length
