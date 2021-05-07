@@ -1,4 +1,4 @@
-import { secondLargest, MinMaxStack ,maxSumSubArray,maxWaterConatiner} from '../index'
+import { secondLargest, MinMaxStack ,maxSumSubArray,maxWaterConatiner, reverseSentence} from '../index'
 
 describe('Second largest function', () => {
 	const arrayOne = [1, 4, 6, 78, 9]
@@ -51,5 +51,12 @@ describe('Maximum water container', () => {
 	const heights = [1,8,6,2,9,4]
 	it('should return max trappable water', () => {
 		expect(maxWaterConatiner(heights)).toBe(24)
+	})
+})
+
+describe('Reverse Sentence', () => {
+	const sentence  = 'God is Good'
+	it('Words in sentence should be reverseed', () => {
+		expect(reverseSentence(sentence)).toBe('Good is God')
 	})
 })
