@@ -1,0 +1,1 @@
+export { longestConsecutive } from './array/longest-range'

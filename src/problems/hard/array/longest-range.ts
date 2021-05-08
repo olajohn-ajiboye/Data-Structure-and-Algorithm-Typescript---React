@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-function longestConsecutive(nums: number[]) {
+export function longestConsecutive(nums: number[]) {
     const hash: Record<number, boolean> = {}
     let longestRange = 0, bestRange: number[] = []
     /* put all numbers in hash for quick lookup */

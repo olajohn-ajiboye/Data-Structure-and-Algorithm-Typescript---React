@@ -11,7 +11,7 @@ function longestPeak(peaks: number[]) {
 	return maxPeak
 }
 
-function dfsLeftAndRight(peaks: number[], leftIndex: number, rightIndex: number, currentPeakCount = 3) {
+export function dfsLeftAndRight(peaks: number[], leftIndex: number, rightIndex: number, currentPeakCount = 3) {
 	while (leftIndex && peaks[leftIndex] > peaks[leftIndex - 1]) {
 		leftIndex--
 		currentPeakCount++
