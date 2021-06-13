@@ -2,7 +2,7 @@ const heap = [1, 3, 8, 4, 10, 50, 39];
 console.log(heap[5]);
 
 class MinHeap<T> {
-  constructor(private heap: T[] = []) {}
+  constructor(private heap: T[] = []) { }
 
   private getLeftChildIndex(parentIndex: number) {
     return parentIndex * 2 + 1;
@@ -49,13 +49,13 @@ class MinHeap<T> {
     ];
   }
 
-  poll(): T {
+  poll() {
     const elem = this.heap.length && this.heap.shift();
     this.heapifyDown();
     return elem;
   }
 
-  peek(): T {
+  peek() {
     return this.heap.length && this.heap[0];
   }
 

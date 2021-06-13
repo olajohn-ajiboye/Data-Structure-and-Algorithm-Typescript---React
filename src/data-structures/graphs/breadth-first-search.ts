@@ -1,10 +1,12 @@
-function GraphBreadthFirstSearch(graph: AdjacencySetGraph, start = 0): void {
+import { AdjacencySetGraph } from './adjacency-list.graph'
+
+export function GraphBreadthFirstSearch(graph: AdjacencySetGraph, start = 0): void {
   const queue = [start];
   // mark all as unvisited with 0
   const visited = Array(graph.numberOfVertices).fill(false);
   // equivalent to while queue is not empty
   while (queue.length) {
-    const firstOnQueue = queue.shift();
+    const firstOnQueue = queue.shift()!;
     if (visited[firstOnQueue]) {
       continue;
     } else {

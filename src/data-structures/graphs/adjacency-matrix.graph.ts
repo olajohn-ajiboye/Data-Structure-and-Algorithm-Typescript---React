@@ -84,3 +84,4 @@ class AdjacencyMatrixGraph {
 }
 
 export { AdjacencyMatrixGraph };
+
